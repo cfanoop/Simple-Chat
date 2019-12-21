@@ -8,7 +8,7 @@ Command Line Chat Application.
   No servers in between, No history, No User Interfaces
   
   
-How to use 
+How to use
 
   1)  Enter the senders port and recievers address/port in mcp.properties (Multiple revievers can be configured)
     
@@ -27,8 +27,17 @@ How to use
   
   3)  In the screen, type "Appu:hi" to send the "hi" message to Appu. (Application should be running in Appu's machine to recieve the messages). Once the message send to Appu he becomes the current reciever and no need to mention the name again in the successive messages. Just type the message and it will route to Appu. To chat to new user again mention the name and the message "Miku:Hello". Then Miku will be current reciever.
       The messaes from the users will be shown in the screen. Once the message from a friend recieved, he becomes current reciever and the messages entered without name will be send to the same person.
+            
       
+Author
+  Anoop C Francis
+  cfanoop@gmail.com
+  
+  
+Please send you feedback to cfanoop@gmail.com
 
+
+  
  
   
   
