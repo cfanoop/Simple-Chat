@@ -29,11 +29,11 @@ How to use
       The messaes from the users will be shown in the screen. Once the message from a friend recieved, he becomes current reciever and the messages entered without name will be send to the same person.
             
       
-Author
+Author<br>
   Anoop C Francis
   cfanoop@gmail.com
-  
-  
+  <br>
+  <br>
 Please send you feedback to cfanoop@gmail.com
 
 
