@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 
 public class FuncRunners {
 
-	private static int MAX_THREADS = 2;
+	private static int MAX_THREADS = 4;
 	public static ExecutorService stuff = Executors.newFixedThreadPool(MAX_THREADS);
 
 }

@@ -9,6 +9,7 @@ import java.util.UUID;
 
 public class UserContext {
 
+	private String propsFileName = "mcp.properties";
 	private static UserContext ucxt;
 	private MessageContext msgContext = new MessageContext();
 	private Properties properties = new Properties();
@@ -20,14 +21,14 @@ public class UserContext {
 			ucxt.userName = ucxt.properties.getProperty("idname");
 			ucxt.userid = UUID.randomUUID().toString();
 			ucxt.ip = InetAddress.getLocalHost().getHostAddress();
-			ucxt.port = Integer.parseInt(ucxt.properties.getProperty("send.port").strip());
+			ucxt.port = Integer.parseInt(ucxt.properties.getProperty("send.port").trim());
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		}
 	}
 
 	private void loadProps() {
-		try (InputStream input = this.getClass().getClassLoader().getResourceAsStream("mcp.properties")) {
+		try (InputStream input = this.getClass().getClassLoader().getResourceAsStream(propsFileName)) {
 			properties.load(input);
 		} catch (IOException io) {
 			io.printStackTrace();

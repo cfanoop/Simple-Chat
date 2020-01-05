@@ -37,7 +37,7 @@ public class MessageReciever {
 				dpRead = new DatagramPacket(byteArray, byteArray.length);
 				ds.receive(dpRead);
 				Message m = Message.getMFromBytes(byteArray);
-				// System.out.println("Message Recieved");
+			//	System.out.println("Message Recieved");
 				recievedMessages.add(m);
 				Thread.sleep(500);
 				byteArray = new byte[100000];

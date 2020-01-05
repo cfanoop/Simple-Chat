@@ -15,10 +15,10 @@ public class Reciever implements Serializable {
 	public Reciever(String recieverName) {
 		UserContext uctx = UserContext.getContext();
 		this.recieverName = recieverName;
-		this.recieverIp = uctx.getProperties().getProperty("reciever." + recieverName + ".ip").strip();
+		this.recieverIp = uctx.getProperties().getProperty("reciever." + recieverName + ".ip").trim();
 		// System.out.println("recieverIp " + recieverIp);
 		this.recieverPort = Integer
-				.parseInt(uctx.getProperties().getProperty("reciever." + recieverName + ".port").strip());
+				.parseInt(uctx.getProperties().getProperty("reciever." + recieverName + ".port").trim());
 	}
 
 	public String getRecieverName() {

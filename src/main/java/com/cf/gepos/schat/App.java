@@ -21,7 +21,7 @@ public class App {
 
 	public void startApplication() {
 
-		System.out.println("Starting");
+		System.out.println("Starting schat for "+UserContext.getContext().getUserName());
 		
 		rui.start();
 
