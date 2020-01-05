@@ -15,7 +15,7 @@ public class MessageReciever {
 	public MessageReciever() {
 		try {
 			this.ds = new DatagramSocket(
-					Integer.parseInt(UserContext.getContext().getProperties().getProperty("recieve.port").strip()));
+					Integer.parseInt(UserContext.getContext().getProperties().getProperty("recieve.port").trim()));
 			recievedMessages = UserContext.getContext().getMsgContext().getRecievedMessages();
 		} catch (Exception e) {
 			e.printStackTrace();
