@@ -37,11 +37,11 @@ public class MessageReciever {
 				dpRead = new DatagramPacket(byteArray, byteArray.length);
 				ds.receive(dpRead);
 				Message m = Message.getMFromBytes(byteArray);
-			//	System.out.println("Message Recieved");
+				// System.out.println("Message Recieved");
 				recievedMessages.add(m);
 				Thread.sleep(500);
 				byteArray = new byte[100000];
-				UserContext.getContext().getMsgContext().setReciever(m.getReciever());
+				UserContext.getContext().getMsgContext().setReciever(new Reciever(m.getUsername()));
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
